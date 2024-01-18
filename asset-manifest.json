@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5afad168.css",
-    "main.js": "/static/js/main.6e0c7fb3.js",
+    "main.css": "/static/css/main.c1268c6b.css",
+    "main.js": "/static/js/main.6e502dd2.js",
     "static/js/787.a4b45000.chunk.js": "/static/js/787.a4b45000.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/girl banner 1.svg": "/static/media/girl banner 1.0252a1c14cba22b0aba104aca3569695.svg",
+    "static/media/git.svg": "/static/media/git.f6a281d0b3655d60796151a79c0e29a0.svg",
+    "static/media/logo.svg": "/static/media/logo.0c1342fddc50cc57d63877a187ddbe92.svg",
+    "static/media/Reddit .svg": "/static/media/Reddit .6318d58963c6b78cdcde08ab3acce289.svg",
+    "static/media/Rip.svg": "/static/media/Rip.559a2207c46527bfe91355e70d24be73.svg",
+    "static/media/google.svg": "/static/media/google.4c9466c95ba634eab6f17a31da72a19c.svg",
+    "static/media/Facebook.svg": "/static/media/Facebook.c3f99a3b4e6c157abf8b0a388c780dec.svg",
     "index.html": "/index.html",
-    "main.5afad168.css.map": "/static/css/main.5afad168.css.map",
-    "main.6e0c7fb3.js.map": "/static/js/main.6e0c7fb3.js.map",
+    "main.c1268c6b.css.map": "/static/css/main.c1268c6b.css.map",
+    "main.6e502dd2.js.map": "/static/js/main.6e502dd2.js.map",
     "787.a4b45000.chunk.js.map": "/static/js/787.a4b45000.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5afad168.css",
-    "static/js/main.6e0c7fb3.js"
+    "static/css/main.c1268c6b.css",
+    "static/js/main.6e502dd2.js"
   ]
 }
