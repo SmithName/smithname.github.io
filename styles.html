@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Defence Chess</title>
+    <style>
+        /* Basic styling for the chessboard */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        #chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .light {
+            background-color: #f0d9b5;
+        }
+
+        .dark {
+            background-color: #b58863;
+        }
+
+        /* Basic styling for the pieces */
+        .piece {
+            width: 50px;
+            height: 50px;
+
+            /* Assumes the sprite image has two rows */
+            cursor: pointer;
+        }
+
+        img {
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Square Defence Chess</h1>
+    <img src="Chess_Pieces_Sprite 1.svg" alt="" class="src">
+    <div id="chessboard">
+
+
+        <!-- You can dynamically generate the chessboard using JavaScript -->
+        <!-- For simplicity, I'll just create a static 8x8 chessboard here -->
+        <!-- You can add pieces and functionality using JavaScript -->
+
+        <!-- Row 1 -->
+        <!-- <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div> -->
+
+
+
+
+
+    </div>
+
+    <!-- Rules -->
+    <h2>Rules:</h2>
+    <ol>
+        <li>The goal is to control and guard a randomly chosen empty square on the chessboard.</li>
+        <li>Begin with a standard chessboard. Randomly select an empty square; this square will be the focus of the
+            game.</li>
+        <li>Players are not allowed to move any of their pieces onto the chosen square.</li>
+        <li>Players take turns making standard chess moves, with the primary objective of controlling and guarding the
+            chosen square.</li>
+        <li>The game ends when a player cannot make a legal move that would add a piece to the board that guards the
+            chosen square.</li>
+        <li>The player with more pieces guarding the square at the end of the game is the winner.</li>
+    </ol>
+
+</body>
+
+<Script>
+
+    // JavaScript for dynamically generating the chessboard
+    document.addEventListener('DOMContentLoaded', function () {
+        const chessboard = document.getElementById('chessboard');
+
+        // Loop to create 8 rows
+        for (let i = 0; i < 8; i++) {
+            // Loop to create 8 squares in each row
+            for (let j = 0; j < 8; j++) {
+                const square = document.createElement('div');
+                square.classList.add('square', (i + j) % 2 === 0 ? 'light' : 'dark');
+                square.dataset.row = i;
+                square.dataset.col = j;
+
+
+                // Add click event for each square
+                square.addEventListener('click', handleSquareClick);
+
+
+                chessboard.appendChild(square);
+            }
+        }
+    });
+</script>
+
+<script>
+
+    // Event handler for square click
+    function handleSquareClick(event) {
+        const square = event.target;
+        const row = square.dataset.row;
+        const col = square.dataset.col;
+
+        // Here you can implement logic for adding pieces, moving them, and checking the game rules
+        // For simplicity, let's just add a basic piece on click
+        addPiece(row, col);
+    }
+
+    function addPiece(row, col) {
+        const piece = document.createElement('div');
+        piece.classList.add('piece');
+        piece.style.backgroundImage = 'url("Chess_Pieces_Sprite 1.svg")';
+        piece.style.backgroundPosition = `-${col * 50}px -${row * 50}px`; // Assumes 50px square size
+        document.querySelector(`[data-row="${row}"][data-col="${col}"]`).appendChild(piece);
+    }</script>
+
+</html>
