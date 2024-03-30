@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Document</title>
+</head>
+<body>
+
+<!-- Your iframe -->
+<iframe id="myIframe" src="https://www.blackbox.ai" width="600" height="400"></iframe>
+
+<script>
+  // Wait for the iframe to load
+  document.getElementById('myIframe').onload = function() {
+    // Access the iframe document
+    var iframeDoc = document.getElementById('myIframe').contentDocument || document.getElementById('myIframe').contentWindow.document;
+
+    // Access elements inside the iframe
+    var iframeElement = iframeDoc.getElementsByClassName('ml-2')[0];
+
+    // Now you can manipulate the element as needed
+    console.log(iframeElement.innerText); // Example: Log the text content of the element
+  };
+</script>
+
+</body>
+</html>
+
