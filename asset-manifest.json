@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.913bc94e.css",
-    "main.js": "/static/js/main.61a7e2f4.js",
-    "static/js/787.a4b45000.chunk.js": "/static/js/787.a4b45000.chunk.js",
+    "main.css": "/static/css/main.24b4a0d8.css",
+    "main.js": "/static/js/main.d09b3d13.js",
+    "static/js/488.bb3fb5b6.chunk.js": "/static/js/488.bb3fb5b6.chunk.js",
     "static/media/F3KUco0Z.gif": "/static/media/F3KUco0Z.367aca6dc3c6a1b767c9.gif",
     "static/media/Chess_Pieces_Sprite 1.svg": "/static/media/Chess_Pieces_Sprite 1.8daa80174969f982f98183f24a41da27.svg",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -69,12 +69,12 @@
     "static/media/google.svg": "/static/media/google.4c9466c95ba634eab6f17a31da72a19c.svg",
     "index.html": "/index.html",
     "static/media/Facebook.svg": "/static/media/Facebook.c6293ec6cdebb310de17013d3c2b0a81.svg",
-    "main.913bc94e.css.map": "/static/css/main.913bc94e.css.map",
-    "main.61a7e2f4.js.map": "/static/js/main.61a7e2f4.js.map",
-    "787.a4b45000.chunk.js.map": "/static/js/787.a4b45000.chunk.js.map"
+    "main.24b4a0d8.css.map": "/static/css/main.24b4a0d8.css.map",
+    "main.d09b3d13.js.map": "/static/js/main.d09b3d13.js.map",
+    "488.bb3fb5b6.chunk.js.map": "/static/js/488.bb3fb5b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.913bc94e.css",
-    "static/js/main.61a7e2f4.js"
+    "static/css/main.24b4a0d8.css",
+    "static/js/main.d09b3d13.js"
   ]
 }
